@@ -8,9 +8,50 @@
     <!-- Cloudflare Web Analytics -->
     <!-- End Cloudflare Web Analytics -->
     <style>
-      div.card1 img {
-        width: 10%;
-        height: 10%;
+      /* 90年代から2026年へタイムスリップする魔法のCSS */
+      body {
+        font-family:
+          "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+          sans-serif;
+        background-color: #f5f7fa;
+        color: #333;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      /* リンクの塊をカード風にする */
+      a {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        text-decoration: none; /* 青い下線を消す */
+        color: #2c3e50;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      /* ホバーしたときにちょっと浮く演出 */
+      a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        color: #3498db;
+      }
+
+      /* 画像を丸角にしてサイズを揃える */
+      a img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 20px;
       }
     </style>
   </head>
